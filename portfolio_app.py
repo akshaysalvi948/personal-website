@@ -240,7 +240,7 @@ elif st.session_state.page == "experience":
         },
         {
             "title": "Senior Data Engineer",
-            "company": "DataFlow Inc.",
+            "company": "Bizmetric",
             "duration": "Feb 2021 - Jan 2025",
             "description": [
                 "Worked with different technologies such as ETL Data Modeling, Data Extraction, Data Cleaning, Data Processing, and creating Data pipelines",
@@ -385,22 +385,21 @@ elif st.session_state.page == "contact":
                 I'm always interested in discussing new opportunities, 
                 data engineering challenges, and innovative projects.
             </p>
-            
-            <div style="margin: 2rem 0;">
-                <h4 style="color: #3498db;">📧 Email</h4>
-                <p>akshay.salvi@email.com</p>
-                
-                <h4 style="color: #3498db;">💼 LinkedIn</h4>
-                <p><a href="https://www.linkedin.com/in/akshay-salvi-2869b2125/" target="_blank">linkedin.com/in/akshay-salvi-2869b2125/</a></p>
-                
-                <h4 style="color: #3498db;">🐙 GitHub</h4>
-                <p><a href="https://github.com/akshaysalvi" target="_blank">github.com/akshaysalvi</a></p>
-                
-                <h4 style="color: #3498db;">📍 Location</h4>
-                <p>Mumbai, India</p>
-            </div>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Contact information using Streamlit components
+        st.markdown("### 📧 Email")
+        st.write("akshay.salvi@email.com")
+        
+        st.markdown("### 💼 LinkedIn")
+        st.markdown("[linkedin.com/in/akshay-salvi-2869b2125/](https://www.linkedin.com/in/akshay-salvi-2869b2125/)")
+        
+        st.markdown("### 🐙 GitHub")
+        st.markdown("[github.com/akshaysalvi](https://github.com/akshaysalvi)")
+        
+        st.markdown("### 📍 Location")
+        st.write("Mumbai, India")
     
     with col2:
         # Contact form

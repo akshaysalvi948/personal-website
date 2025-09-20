@@ -36,8 +36,8 @@ def create_profile_placeholder():
     draw.text((x, y), text, fill='white', font=font)
     
     # Save the image
-    img.save('profile_placeholder.jpg', 'JPEG')
-    print("Profile placeholder image created: profile_placeholder.jpg")
+    img.save('profile_phot0.JPG.jpg', 'JPEG')
+    print("Profile placeholder image created: profile_phot0.jpg")
 
 if __name__ == "__main__":
     create_profile_placeholder()
