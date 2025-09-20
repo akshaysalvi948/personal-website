@@ -389,6 +389,9 @@ elif st.session_state.page == "contact":
         """, unsafe_allow_html=True)
         
         # Contact information using Streamlit components
+        st.markdown("### 📍 Contact Information")
+        st.write("+91 7208974398, Mumbai, India")
+
         st.markdown("### 📧 Email")
         st.write("akshay.salvi@email.com")
         
@@ -400,6 +403,8 @@ elif st.session_state.page == "contact":
         
         st.markdown("### 📍 Location")
         st.write("Mumbai, India")
+
+        
     
     with col2:
         # Contact form
