@@ -87,9 +87,9 @@ def load_profile_image():
     try:
         # Try to load actual profile image
         if os.path.exists("profile_photo.jpg"):
-            st.image("profile_photo.jpg", width=200, use_column_width=False)
+            st.image("profile_photo.jpg", width=200, use_container_width=False)
         elif os.path.exists("profile_placeholder.jpg"):
-            st.image("profile_placeholder.jpg", width=200, use_column_width=False)
+            st.image("profile_placeholder.jpg", width=200, use_container_width=False)
         else:
             # Fallback to CSS placeholder
             st.markdown("""
@@ -150,14 +150,30 @@ if st.session_state.page == "about":
     with col1:
         st.markdown("""
         <div style="font-size: 1.1rem; line-height: 1.6;">
-        <p>I am a passionate Senior Data Engineer with over 6+ years of experience in designing, building, and maintaining 
-        scalable data infrastructure and pipelines. I specialize in transforming raw data into actionable insights that 
-        drive business decisions.</p>
+        <p>I am a Senior Data Engineer with 7+ years of experience in Data Engineering, 
+        Compliance Automation, and Software Development. My expertise lies in building scalable ETL 
+        pipelines, designing cloud-native solutions, and developing AI-driven compliance frameworks 
+        that streamline processes and reduce manual effort.</p>
+        
+        <p>I have worked across diverse domains including Finance, Retail, and Food, delivering solutions that combine data integrity, 
+        regulatory compliance, and automation.</p>
         
         <p>My expertise spans across cloud platforms (AWS, Azure, GCP), big data technologies (Spark, Hadoop, Kafka), 
         and modern data stack tools. I have a proven track record of leading data engineering teams and delivering 
         high-impact projects that improve data quality, reduce processing time, and enable real-time analytics.</p>
         
+        <p><strong>Key Expertise Areas:</strong></p>
+        <ul>
+        <li>🔹 Cloud & Data Platforms: AWS (S3, Glue, Lambda, Redshift), Azure (Databricks, Synapse, Data Factory), GCP (BigQuery, Composer), Snowflake</li>
+        <li>🔹 ETL & Data Engineering: End-to-end pipelines, data validation, schema enforcement, deduplication, event-driven workflows</li>
+        <li>🔹 Programming & Tools: PySpark, Hive, Hadoop ecosystem, Pandas, Flask (REST APIs), SQLAlchemy, Psycopg, Boto3</li>
+        <li>🔹 Compliance & Automation: Regulatory monitoring, validation systems, audit trails, metadata catalogs</li>
+        <li>🔹 AI & GenAI Applications: Risk analysis, audit support, policy summarization, anomaly detection, predictive compliance analytics, multi-agent LLM frameworks</li>
+        </ul>
+        
+        <p>I am passionate about leveraging Data + AI to drive smarter compliance, enhance efficiency, and enable
+        organizations to focus on strategic decision-making instead of repetitive manual processes.</p>
+
         <p>I am passionate about staying current with emerging technologies and best practices in the data engineering 
         space, and I enjoy mentoring junior engineers and contributing to open-source projects.</p>
         </div>
@@ -171,7 +187,7 @@ if st.session_state.page == "about":
         with col2_1:
             st.markdown("""
             <div class="metric-card">
-                <h3 style="color: #3498db; margin: 0;">6+</h3>
+                <h3 style="color: #3498db; margin: 0;">7+</h3>
                 <p style="margin: 0;">Years Experience</p>
             </div>
             """, unsafe_allow_html=True)
@@ -208,33 +224,37 @@ elif st.session_state.page == "experience":
     # Experience timeline
     experiences = [
         {
-            "title": "Senior Data Engineer",
-            "company": "TechCorp Solutions",
-            "duration": "2022 - Present",
+            "title": "Senior Compliance Data Engineer",
+            "company": "Avalara",
+            "duration": "2025 Jan - Present",
             "description": [
-                "Led a team of 5 data engineers in designing and implementing scalable data pipelines processing 10TB+ daily",
-                "Architected cloud-native data solutions on AWS, reducing infrastructure costs by 40%",
-                "Implemented real-time streaming pipelines using Apache Kafka and Apache Spark",
-                "Collaborated with data scientists to deploy ML models in production environments",
+                "1. Developing tools to enhance efficiency and accuracy in compliance processes",
+                "Designing intelligent compliance monitoring tools that automatically track regulatory changes and update internal compliance frameworks",
+                "Creating automated validation systems that check data against regulatory standards, ensuring fewer manual errors.",
+                "Implementing workflow automation that accelerates approval processes, audit readiness, and reporting timelines",
+                "Leveraging cloud-native platforms (Snowflake, AWS, and other AI tools) with inbuilt governance to safeguard sensitive information.",
+                "Utilizing AI tools to reduce manual efforts and repetitive tasks",
+                "Building GenAI agents using different LLMs and implementing multi-agent AI frameworks to improve efficiency and outcomes",
                 "Mentored junior engineers and established best practices for code review and documentation"
             ]
         },
         {
-            "title": "Data Engineer",
+            "title": "Senior Data Engineer",
             "company": "DataFlow Inc.",
-            "duration": "2020 - 2022",
+            "duration": "Feb 2021 - Jan 2025",
             "description": [
-                "Built and maintained ETL pipelines processing 5TB+ of data daily using Python and Apache Airflow",
-                "Optimized SQL queries and data warehouse performance, improving query speed by 60%",
-                "Implemented data quality monitoring and alerting systems",
-                "Worked with cross-functional teams to understand business requirements and deliver data solutions",
-                "Contributed to the migration from on-premises to cloud infrastructure"
+                "Worked with different technologies such as ETL Data Modeling, Data Extraction, Data Cleaning, Data Processing, and creating Data pipelines",
+                "Used cloud services including AWS (S3, Lambda, Glue, Workflow, Secret Manager, SNS, Redshift database)",
+                "Implemented Azure solutions (Databricks, Synapse, Data Factory, Key Vault, SQL Server, Container App, Registry, Kubernetes)",
+                "Developed GCP solutions (BigQuery, Composer/Airflow) for data processing and orchestration",
+                "Built scalable data pipelines processing 5TB+ of data daily using Python and Apache Airflow",
+                "Optimized SQL queries and data warehouse performance, improving query speed by 60%"
             ]
         },
         {
-            "title": "Junior Data Engineer",
-            "company": "Analytics Pro",
-            "duration": "2018 - 2020",
+            "title": "Junior Data Scientist",
+            "company": "KayaDev AI ",
+            "duration": "Jun 2018 - Feb 2021",
             "description": [
                 "Developed data pipelines using Python, SQL, and Apache Spark",
                 "Created automated data validation and quality checks",
